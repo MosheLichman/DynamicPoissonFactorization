@@ -109,8 +109,8 @@ Ratings::read_generic(FILE *f, CountMap *cmap)
         (mt == _movie2seq.end() && _curr_movie_seq >= _env.m))
       continue;
 
-    if (input_rating_class(rating) == 0)
-      continue;
+    //if (input_rating_class(rating) == 0)
+    //  continue;
 
     if (it == _user2seq.end())
       assert(add_user(uid));
