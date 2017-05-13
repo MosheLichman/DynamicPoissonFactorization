@@ -1335,7 +1335,7 @@ DynNormPRec::compute_likelihood(bool validation)
   bool stop = false;
   int why = -1;
   if (_iter > 30) {
-    if (a > _prev_h && _prev_h != 0 && fabs(a - _prev_h) < 0.0001) {
+    if (a > _prev_h && _prev_h != 0 && fabs(a - _prev_h) < 0.001) {
       stop = true;
       why = 0;
     } else if (a < _prev_h)
