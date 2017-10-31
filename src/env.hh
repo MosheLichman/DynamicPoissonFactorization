@@ -293,6 +293,7 @@ Env::Env(uint32_t N, uint32_t M, uint32_t K, string fname,
   max_train_time_period = 0;
 
   ostringstream sa;
+  sa << datfname << "/";
   sa << "n" << n << "-";
   sa << "m" << m << "-";
   sa << "k" << k;
